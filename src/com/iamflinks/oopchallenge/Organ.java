@@ -1,11 +1,42 @@
 package com.iamflinks.oopchallenge;
 
 public class Organ {
-    private Eye leftEye;
-    private Eye rightEye;
-//    private Heart heart;
-//    private Stomach stomach;
-//    private Skin skin;
+    private String name;
+    private String medicalCondition;
+    private String actions;
 
+    public Organ(String name, String medicalCondition, String actions) {
+        this.name = name;
+        this.medicalCondition = medicalCondition;
+        this.actions = actions;
+    }
 
+    public Organ(String name, String medicalCondition) {
+        this.name = name;
+        this.medicalCondition = medicalCondition;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getMedicalCondition() {
+        return medicalCondition;
+    }
+
+    public void setMedicalCondition(String medicalCondition) {
+        this.medicalCondition = medicalCondition;
+    }
+
+    public String getActions() {
+        return actions;
+    }
+
+    public void setActions(String actions) {
+        this.actions = actions;
+    }
 }
