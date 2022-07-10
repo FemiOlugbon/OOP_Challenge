@@ -19,4 +19,11 @@ public class Stomach extends Organ{
     public String digest() {
         return "Digestion started ...";
     }
+
+    public void getDetails() {
+        System.out.println("Name: " + this.getName());
+        System.out.println("Medical Condition: " + this.getMedicalCondition());
+        System.out.println(this.getText());
+        System.out.println("\t\t 1. " + this.getActions());
+    }
 }

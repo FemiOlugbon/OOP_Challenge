@@ -21,4 +21,11 @@ public class Heart extends Organ{
         setHeartRate(heartRate);
         return "Heart rate was changed to: " + heartRate;
     }
+
+    public void getDetails() {
+        System.out.println("Name: " + this.getName());
+        System.out.println("Medical Condition: " + this.getMedicalCondition());
+        System.out.println("Heart rate: " + this.getHeartRate());
+        System.out.println("\t\t 1. " + this.getActions());
+    }
 }

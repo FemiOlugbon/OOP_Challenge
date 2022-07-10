@@ -19,4 +19,11 @@ public class Eye extends Organ {
     public String closeEye() {
         return this.getName() + " Closed";
     }
+
+    public void getDetails() {
+        System.out.println("Name: " + this.getName());
+        System.out.println("Medical Condition: " + this.getMedicalCondition());
+        System.out.println("Color: " + this.getColor());
+        System.out.println("\t\t 1. " + this.getActions());
+    }
 }

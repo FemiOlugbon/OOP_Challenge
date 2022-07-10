@@ -74,4 +74,14 @@ public class Human {
     public void setSkin(Skin skin) {
         this.skin = skin;
     }
+
+    public void getDetails() {
+        System.out.println("Choose an Organ:");
+        System.out.println("\t1. " + this.getLeftEye().getName());
+        System.out.println("\t2. " + this.getRightEye().getName());
+        System.out.println("\t3. " + this.getHeart().getName());
+        System.out.println("\t4. " + this.getStomach().getName());
+        System.out.println("\t5. " + this.getSkin().getName());
+        System.out.println("\t6. Quit");
+    }
 }
