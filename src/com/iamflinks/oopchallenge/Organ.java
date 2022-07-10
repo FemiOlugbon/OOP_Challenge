@@ -1,8 +1,8 @@
 package com.iamflinks.oopchallenge;
 
 public class Organ {
-    private String name;
-    private String medicalCondition;
+    final private String name;
+    final private String medicalCondition;
     private String actions;
 
     public Organ(String name, String medicalCondition, String actions) {
@@ -20,16 +20,8 @@ public class Organ {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
-
     public String getMedicalCondition() {
         return medicalCondition;
-    }
-
-    public void setMedicalCondition(String medicalCondition) {
-        this.medicalCondition = medicalCondition;
     }
 
     public String getActions() {

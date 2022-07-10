@@ -1,7 +1,7 @@
 package com.iamflinks.oopchallenge;
 
 public class Eye extends Organ {
-    private String color;
+    final private String color;
 
     public Eye(String name, String medicalCondition, String actions, String color) {
         super(name, medicalCondition, actions);
@@ -10,10 +10,6 @@ public class Eye extends Organ {
 
     public String getColor() {
         return color;
-    }
-
-    public void setColor(String color) {
-        this.color = color;
     }
 
     public String closeEye() {

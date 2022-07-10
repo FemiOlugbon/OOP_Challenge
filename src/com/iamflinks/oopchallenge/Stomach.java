@@ -1,7 +1,7 @@
 package com.iamflinks.oopchallenge;
 
 public class Stomach extends Organ{
-    private String text;
+    final private String text;
 
     public Stomach(String name, String medicalCondition, String actions, String text) {
         super(name, medicalCondition, actions);
@@ -10,10 +10,6 @@ public class Stomach extends Organ{
 
     public String getText() {
         return text;
-    }
-
-    public void setText(String text) {
-        this.text = text;
     }
 
     public String digest() {
